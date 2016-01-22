@@ -44,7 +44,7 @@ mysql-drone:
   labels:
     io.rancher.scheduler.affinity:host_label: drone.role=leader
 volume-cleanup:
-  image: cloudnautique/vol-cleanup:v0.1.0
+  image: cloudnautique/vol-cleanup:v0.3.0
   volumes:
     - /var/lib/docker:/var/lib/docker
     - /var/run/docker.sock:/var/run/docker.sock
